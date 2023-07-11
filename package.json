@@ -1,0 +1,39 @@
+{
+  "name": "ts-demo",
+  "version": "1.0.0",
+  "description": "Proyecto de ejemplo para el desarrollo con TS (Openbootcamp)",
+  "main": "index.js",
+  "scripts": {
+    "start-ts": "npx && tsc --init --rootDir src --outDir build --esModuleInterop --resolveJsonModule --lib es6 --module commonjs --allowjs true --noImplicitAny true",
+    "tsNode": "cd src && ts-node index.ts",
+    "start": "nodemon",
+    "lintingfix": "eslint --fix",
+    "linting": "eslint",
+    "document": "typedoc --out docs src",
+    "transpilation": "tsc",
+    "build:prod": "rimraf ./build && tsc",
+    "start:prod": "npm run build:prod && node build/index.js"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "Alex Diban",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.3.1",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "eslint": "^8.44.0",
+    "eslint-config-standard-with-typescript": "^36.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "nodemon": "^2.0.22",
+    "rimraf": "^5.0.1",
+    "ts-node": "^10.9.1",
+    "typedoc": "^0.24.8",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "cookies-utils": "^1.0.0"
+  }
+}

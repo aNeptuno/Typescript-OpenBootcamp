@@ -1,0 +1,7 @@
+/* Cuando no funcionan,  hacer npx
+y despues correr cualquiera de ellos con npm run*/
+
+nodemon no funciona correctamente al hacerlo 
+con npx + npm run start
+
+mejor correr directamente: nodemon
